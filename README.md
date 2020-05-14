@@ -9,12 +9,16 @@ The assignment is to optimize a seven day meal plan containing as little sugar a
 ## Prerequisites
 In order to run the project you should have Docker and make installed.
 ## Running
-To build docker container run 
+Clone the repository
+```bash
+https://github.com/NurikS/Fourkind-Optimization.git
+```
+Build the docker container using
 ```bash
 make build
 ```
 
-To run docker container run 
+Run the docker container using
 ```bash 
 make run
 ```
