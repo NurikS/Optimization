@@ -7,5 +7,5 @@ build:
 	docker build -t $(IMAGE_NAME):$(VERSION) .
 
 run:
-	docker run -it $(IMAGE_NAME):$(VERSION)
+	docker run $(IMAGE_NAME):$(VERSION)
 
