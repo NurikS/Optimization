@@ -23,4 +23,4 @@ Run the docker container using
 make run
 ```
 ## Built with
-..* [Pulp](https://coin-or.github.io/pulp/)
+..*[Pulp](https://coin-or.github.io/pulp/)
