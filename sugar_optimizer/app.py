@@ -1,7 +1,6 @@
 import pandas as pd
 from pulp import *
 
-
 def run_process():
     """Import data"""
     data = pd.read_csv("resultset.csv", sep=";")
@@ -81,7 +80,6 @@ def run_process():
         
         list(probs.keys())[i] += lpSum([fibre[f] * food_vars[f] for f in list(probs.values())[i]]) >= 20.0, "FibreMinimum"
         list(probs.keys())[i] += lpSum([fibre[f] * food_vars[f] for f in list(probs.values())[i]]) <= 450.0, "FibreMaximum"
-        list(probs.keys())[i] += lpSum([food_vars[f] for f in list(probs.values())[i]]) >= 3, "MinimumFood"
 
 
 
